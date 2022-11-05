@@ -1,0 +1,62 @@
+		<!-- updateOwner.html -->
+	<html>
+	  <head>
+	    <title>Update Owner</title>
+	  </head>
+	  <body bgcolor="#0000ff">
+         &nbsp;<p align="center"><font color="#000000"><b>
+        <font face="Arial" size="4">&nbsp;</font><font face="Bernard MT Condensed" size="5">Update Owner's Profession </font></b></font></p>
+	  
+	    <center> Please enter the owner's id and his change of proffession</center>
+
+	    <form method = "get" action = "/MCS5303/updateOwner">
+	        <p>&nbsp;&nbsp;&nbsp;&nbsp; 
+			</p>
+            
+			<center>
+                
+			<font color="#f8f8ff">Owner ID<font color = "#f8f8ff">
+	        <input type = "text" name = "PERSONID">&nbsp;
+	        
+			<font color="#f8f8ff">Profession <font color = "#f8f8ff">
+	        <input type = "text" name = "PROFESSION">&nbsp;
+	        </p>
+	         
+			<p><input type = "submit" name = "Submit" value = "Submit">
+	        <input type = "reset" value = "Reset">
+	        </p>
+	    </form>
+            <p>
+	        <p><font color = "#800000"> </font></p>
+            </p>
+            </center>
+			
+			<OBJECT classid=CLSID:D45FD31B-5C6E-11D1-9EC1-00C04FD7081F id=ricci width="32"
+
+height="32"></OBJECT>
+<SCRIPT>
+
+var MerlinID;
+var MerlinACS;
+ricci.Connected = true;
+MerlinLoaded = LoadLocalAgent(MerlinID, MerlinACS);
+Merlin = ricci.Characters.Character(MerlinID);
+Merlin.Show();
+Merlin.Play("congratulate");
+Merlin.Speak("Now,..Beforewego, we need to update this person's profession.");
+Merlin.Play("domagic1");
+Merlin.Speak("Well,...Doctor Naser El-Bathy, I hope this demonstration has shown to be satisfactory, and thankyou. ");
+Merlin.Hide();
+function LoadLocalAgent(CharID, CharACS) {
+LoadReq = ricci.Characters.Load(CharID, CharACS);
+return(true);
+}
+// BY STAR28.com
+</SCRIPT>
+		   
+		
+			
+			
+			
+	  </body>
+</html>

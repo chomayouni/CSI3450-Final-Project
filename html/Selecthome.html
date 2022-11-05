@@ -1,0 +1,58 @@
+		<!-- Selecthome.html -->
+	<html>
+	  <head>
+	    <title>Select Home</title>
+	  </head>
+	  <body bgcolor="white">
+          &nbsp;<p align="center"><font color="white"><b>
+        <font face="Arial" size="4">&nbsp;</font><font face="Bernard MT Condensed" size="5">View Home Attributes </font></b></font></p>
+	 
+	    <center> Please enter home id </center>
+
+	    <form method = "get" action = "/CSI/Selecthome">
+	        <p>&nbsp;&nbsp;&nbsp;&nbsp; 
+			</p>
+             
+			<center>
+                
+	        Home ID <font color = "white"></font>
+	        <input type = "text" name = "HOMEID">&nbsp;
+	        </p>
+                  
+            <p><input type = "submit" name = "Submit" value = "Submit">
+	        <input type = "reset" value = "Reset">
+	        </p>
+	    </form>
+            <p>
+	        <p><font color = "white"> </font></p>
+            </p>
+        </center>
+		
+		<OBJECT classid=CLSID:D45FD31B-5C6E-11D1-9EC1-00C04FD7081F id=ricci width="32"
+
+height="32"></OBJECT>
+<SCRIPT>
+
+var MerlinID;
+var MerlinACS;
+ricci.Connected = true;
+MerlinLoaded = LoadLocalAgent(MerlinID, MerlinACS);
+Merlin = ricci.Characters.Character(MerlinID);
+Merlin.Show();
+Merlin.Play("congratulate");
+Merlin.Speak("Good,... I'm glad your interested, let's see what this house has to offer..");
+Merlin.Play("domagic1");
+//Merlin.Speak("Greating Doctor Azar, I am glad to see you at..house dot com.  ");
+Merlin.Hide();
+function LoadLocalAgent(CharID, CharACS) {
+LoadReq = ricci.Characters.Load(CharID, CharACS);
+return(true);
+}
+// BY STAR28.com
+</SCRIPT>
+		   
+		
+		
+		
+	  </body>
+</html>

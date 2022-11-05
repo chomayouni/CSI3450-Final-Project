@@ -1,0 +1,83 @@
+	<!-- AddAgent.html -->
+	<html>
+	  <head>
+	    <title>Adding an Agent</title>
+	  </head>
+	  <body bgcolor="blue">
+	    &nbsp;<p align="center"><font color="#000000""><b>
+        <font face="Arial" size="4">&nbsp;</font><font face="Bernard MT Condensed" size="5">Add A New Agent
+         </font></b></font></p>
+		<center> 
+		
+		Please enter Person Id and license number
+
+	    <form method = "post" action = "/MCS5303/AddAgent">
+		<p> 
+		
+		<table>
+		  <tr>
+		     <td>
+		         <font color="red">Person Id <font color = "red">*</font>
+			 </td>
+			 <td>
+	            <input type = "text" name = "PERSONID">&nbsp; (The Id entered must be in the Person data table)
+			 </td>
+		   </tr>
+		   <tr>
+		      <td>
+			      <font color="#FF0000">License Number</font><font color="red">*</font>
+			  </td>
+			  <td>
+                  <font color="#FF0000"><span style="background-color: #000000">
+	              <input type = "text" name = "LICENSENUM" size="25"></span></font>&nbsp; (Can be any number of digits)
+			   </td>
+		   </tr>
+		 </table>
+	    <br><br>
+		  <table>
+		     <tr>
+			    <td>
+			        <input type = "submit" name = "Submit" value = "Submit">
+				</td>
+				<td>
+	               <input type = "reset" value = "Reset">
+				</td>
+			</tr>
+		  </table>
+	      </p>
+	    </form>
+	    <p><font color = "#FF0000">Note: * required fields</font></p>
+		
+		</center>
+		
+	<OBJECT classid=CLSID:D45FD31B-5C6E-11D1-9EC1-00C04FD7081F id=ricci width="32"
+
+height="32"></OBJECT>
+<SCRIPT>
+
+var MerlinID;
+var MerlinACS;
+ricci.Connected = true;
+MerlinLoaded = LoadLocalAgent(MerlinID, MerlinACS);
+Merlin = ricci.Characters.Character(MerlinID);
+Merlin.Show();
+Merlin.Play("congratulate");
+Merlin.Speak("Hello everyone, ....Let's welcome a new agent.  ..");
+Merlin.Play("domagic1");
+//Merlin.Speak("Greating Doctor Azar, I am glad to see you at..house dot com.  ");
+Merlin.Hide();
+function LoadLocalAgent(CharID, CharACS) {
+LoadReq = ricci.Characters.Load(CharID, CharACS);
+return(true);
+}
+// BY STAR28.com
+</SCRIPT>
+  	
+		
+		
+		
+		
+		
+		
+	  </body>
+</html>

@@ -1,0 +1,145 @@
+	<!-- AddNewHome.html -->
+	<html>
+	  <head>
+	    <title>Adding a Home</title>
+	  </head>
+	  <body bgcolor="white">
+
+
+	  <Body Text="#000000">
+	    &nbsp;<p align="center"><font color="black""><b>
+        <font face="Arial" size="4">&nbsp;</font><font face="Bernard MT Condensed" size="5">Add A New Home
+         </font></b></font></p>
+		<center> 
+		
+		Please enter home id and address.
+
+	    <form method = "post" action = "/CSI/AddNewHome">
+		<p> 
+		
+		<table>
+		  <tr>
+		     <td>
+		         <font color="#cdad00">Home ID <font color = "#cdad00">*</font>
+			 </td>
+			 <td>
+	            <input type = "text" name = "HOMEID">&nbsp; (Can be any number of digits)
+			 </td>
+		   </tr>
+		   <tr>
+		      <td>
+			      <font color="#cdad00">Address</font><font color="#cdad00">*</font>
+			  </td>
+			  <td>
+                  <font color="#FF0000"><span style="background-color: #000000">
+	              <input type = "text" name = "ADDRESS" size="25"></span></font>&nbsp; 
+			   </td>
+			   <tr>
+		      <td>
+			      <font color="#cdad00">Floor Space</font><font color="#cdad00">
+			  </td>
+			  <td>
+                  <font color="#cdad00"><span style="background-color: #cdad00">
+	              <input type = "text" name = "FLOORSPACE" size="25"></span></font>&nbsp; (Please enter in sq.ft)
+			   </td>
+		   </tr>
+		   <tr>
+		      <td>
+			      <font color="#cdad00">Floors</font><font color="#cdad00">
+			  </td>
+			  <td>
+                  <font color="#cdad00"><span style="background-color: #cdad00">
+	              <input type = "text" name = "FLOORS" size="25"></span></font>&nbsp; 
+			   </td>
+		   </tr>
+		   <tr>
+		      <td>
+			      <font color="#cdad00">Bedrooms</font><font color="#cdad00">
+			  </td>
+			  <td>
+                  <font color="#cdad00"><span style="background-color: #cdad00">
+	              <input type = "text" name = "BEDROOMS" size="25"></span></font>&nbsp; 
+			   </td>
+		   </tr>
+		   <tr>
+		      <td>
+			      <font color="#cdad00">Full Bathrooms</font><font color="#cdad00">
+			  </td>
+			  <td>
+                  <font color="#cdad00"><span style="background-color: #cdad00">
+	              <input type = "text" name = "FULLBATHROOMS" size="25"></span></font>&nbsp; 
+			   </td>
+		   </tr>
+		   <tr>
+		      <td>
+			      <font color="#cdad00">Half Bathrooms</font><font color="#cdad00">
+			  </td>
+			  <td>
+                  <font color="#cdad00"><span style="background-color: #cdad00">
+	              <input type = "text" name = "HALFBATHROOMS" size="25"></span></font>&nbsp; 
+			   </td>
+		   </tr>
+		   <tr>
+		      <td>
+			      <font color="#cdad00">Land Size</font><font color="#cdad00">
+			  </td>
+			  <td>
+                  <font color="#cdad00"><span style="background-color: #cdad00">
+	              <input type = "text" name = "LANDSIZE" size="25"></span></font>&nbsp; (Please enter in acres)
+			   </td>
+		   </tr>
+		   <tr>
+		      <td>
+			      <font color="#cdad00">Year Constructed</font><font color="#cdad00">
+			  </td>
+			  <td>
+                  <font color="#cdad00"><span style="background-color: #cdad00">
+	              <input type = "text" name = "YEARCONSTRUCTED" size="25"></span></font>&nbsp; (Ex. 1950)
+			   </td>
+		   </tr>
+		   </tr>
+		 </table>
+	    <br><br>
+		  <table>
+		     <tr>
+			    <td>
+			        <input type = "submit" name = "Submit" value = "Submit">
+				</td>
+				<td>
+	               <input type = "reset" value = "Reset">
+				</td>
+			</tr>
+		  </table>
+	      </p>
+	    </form>
+	    <p><font color = "#cdad00">Note: * required fields</font></p>
+		
+		</center>
+		
+		<OBJECT classid=CLSID:D45FD31B-5C6E-11D1-9EC1-00C04FD7081F id=ricci width="32"
+
+height="32"></OBJECT>
+<SCRIPT>
+
+var MerlinID;
+var MerlinACS;
+ricci.Connected = true;
+MerlinLoaded = LoadLocalAgent(MerlinID, MerlinACS);
+Merlin = ricci.Characters.Character(MerlinID);
+Merlin.Show();
+Merlin.Play("congratulate");
+Merlin.Speak("Great,.... Mary just listed another house.  ..");
+Merlin.Play("domagic1");
+//Merlin.Speak("Greating Doctor Azar, I am glad to see you at..house dot com.  ");
+Merlin.Hide();
+function LoadLocalAgent(CharID, CharACS) {
+LoadReq = ricci.Characters.Load(CharID, CharACS);
+return(true);
+}
+// BY STAR28.com
+</SCRIPT>
+  
+		
+		
+	  </body>
+</html>

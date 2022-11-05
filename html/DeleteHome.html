@@ -1,0 +1,57 @@
+		<!-- DeleteHome.html -->
+	<html>
+	  <head>
+	    <title>Delete Home</title>
+	  </head>
+	  <body bgcolor="blue">
+          &nbsp;<p align="center"><font color="#000000"><b>
+          <font face="Arial" size="4">&nbsp;
+		  </font><font face="Bernard MT Condensed" size="5">Home Deletion</font></b></font></p>
+		
+		<center> Please enter HOME ID</center>
+
+	    <form method = "get" action = "/MCS5303/DeleteHome">
+	      <p>&nbsp;&nbsp;&nbsp;&nbsp; </p>
+            <center>
+            Home ID<font color = "#FF0000"></font>
+	        <input type = "text" name = "HomeID">&nbsp;
+	        </p>
+	         
+			<p><input type = "submit" name = "Submit" value = "Submit">
+	        <input type = "reset" value = "Reset">
+	        </p>
+	    </form>
+            <p>
+	        <p><font color = "#800000"> </font></p>
+            </p>
+          </center>
+		  
+		  <OBJECT classid=CLSID:D45FD31B-5C6E-11D1-9EC1-00C04FD7081F id=ricci width="32"
+
+height="32"></OBJECT>
+<SCRIPT>
+
+var MerlinID;
+var MerlinACS;
+ricci.Connected = true;
+MerlinLoaded = LoadLocalAgent(MerlinID, MerlinACS);
+Merlin = ricci.Characters.Character(MerlinID);
+Merlin.Show();
+Merlin.Play("congratulate");
+Merlin.Speak("Too bad,.... They decided not to sell,... lets take it off the list.  ..");
+Merlin.Play("domagic1");
+//Merlin.Speak("Greating Doctor Azar, I am glad to see you at..house dot com.  ");
+Merlin.Hide();
+function LoadLocalAgent(CharID, CharACS) {
+LoadReq = ricci.Characters.Load(CharID, CharACS);
+return(true);
+}
+// BY STAR28.com
+</SCRIPT>
+		  
+		  
+		  
+		  
+		  
+	  </body>
+</html>
