@@ -2,7 +2,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
 import java.sql.*;
-public class Selecthome extends HttpServlet 			//class
+public class homesForSale extends HttpServlet 			//class
 {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
 		throws ServletException,IOException
