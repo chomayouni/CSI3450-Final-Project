@@ -75,7 +75,7 @@ public class UpdateName extends HttpServlet
   			e.printStackTrace();
 		}
 		
-		query = "update Name set personID = '"+PERSONID+"' where Name  = '"+NAME+"'";											
+		query = "update Name set Name = '"+NAME+"' where personID = '"+PERSONID+"'";											
       
 		
 		out.println("<html><head><title>  Name has been updated</title>");	 
