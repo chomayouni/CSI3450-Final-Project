@@ -2,27 +2,29 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
 import java.sql.*;
-
-public class DeleteHome extends HttpServlet 
+public class UpdateName extends HttpServlet 
 {
+	private PreparedStatement pstmt;
+	//public void init() throws ServletException {
+	//	initializeJdbc();
+	//}
     public void doPost(HttpServletRequest request, HttpServletResponse response)
 		throws ServletException,IOException
     {        
 			Statement state4 = null;
 			ResultSet result = null;
 			String query="";        
-			Connection con=null; 
+			Connection con=null;           
+		String PERSONID = request.getParameter("PERSONID");
+		String NAME = request.getParameter("NAME");
             
-
-                String HOMEID = request.getParameter("HOMEID");
-             
-					
-           
-
-
-
+		if (PERSONID.length() == 0 || NAME.length() == 0) {
+		System.out.println("Please: Owner ID and Name are required");
+		return;
+		}
+		
 		try
-		{			
+		{	
             DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver()); 
             con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:orcl", "CSIPROJECT", "mohammed");
 	       	System.out.println("Congratulations! You are connected successfully.");      
@@ -60,18 +62,18 @@ public class DeleteHome extends HttpServlet
   			e.printStackTrace();
 		}
 		
-	query = "delete  from  homes where HOMEID  = '"+HOMEID+"'";											
+		query = "update person set Name = '"+ NAME +"' where personID = '"+ PERSONID +"'";											
       
 		
-	out.println("<html><head><title>  Home has deleted</title>");	 
-	out.println("</head><body>");
+		out.println("<html><head><title>  Name has been updated</title>");	 
+		out.println("</head><body>");
 		
 		
-	out.print( "<br /><b><center><font color=\"RED\"><H2>The following record has been deleted from the database:</H2></font>");
+		out.print( "<br /><b><center><font color=\"RED\"><H2>The following name has been updated in the database:</H2></font>");
 		
-    out.print( HOMEID );
+        out.print(PERSONID + " " + NAME);
 		
-    out.println( "</center><br />" );
+        out.println( "</center><br />" );
        	try 
 		{ 
 			result=state4.executeQuery(query);
@@ -94,6 +96,6 @@ public class DeleteHome extends HttpServlet
 			e.printStackTrace();	
 		}
 
-  	out.println("</body></html>");
+  		out.println("</body></html>");
     } 
 }
