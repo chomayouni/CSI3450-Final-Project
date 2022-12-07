@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+    "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<web-app>
+   <servlet>
+     <servlet-name>FirstServlet</servlet-name>
+     <servlet-class>FirstServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>FirstServlet</servlet-name>
+     <url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>homes</servlet-name>
+     <servlet-class>homes</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>homes</servlet-name>
+     <url-pattern>/homes</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>GetParameters</servlet-name>
+     <servlet-class>GetParameters</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>GetParameters</servlet-name>
+     <url-pattern>/GetParameters</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>SimpleRegistration</servlet-name>
+     <servlet-class>SimpleRegistration</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>SimpleRegistration</servlet-name>
+     <url-pattern>/SimpleRegistration</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+     <servlet-name>SimpleJdbc</servlet-name>
+     <servlet-class>SimpleJdbc</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>SimpleJdbc</servlet-name>
+     <url-pattern>/SimpleJdbc</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+     <servlet-name>SimpleDelete</servlet-name>
+     <servlet-class>SimpleDelete</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>SimpleDelete</servlet-name>
+     <url-pattern>/SimpleDelete</url-pattern>
+  </servlet-mapping>
+
+ 
+   <servlet>
+     <servlet-name>SimpleUpdate</servlet-name>
+     <servlet-class>SimpleUpdate</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>SimpleUpdate</servlet-name>
+     <url-pattern>/SimpleUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>Registration</servlet-name>
+     <servlet-class>Registration</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>Registration</servlet-name>
+     <url-pattern>/Registration</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>AddAgent</servlet-name>
+     <servlet-class>AddAgent</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>AddAgent</servlet-name>
+     <url-pattern>/AddAgent</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+     <servlet-name>AddNewHome</servlet-name>
+     <servlet-class>AddNewHome</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>AddNewHome</servlet-name>
+     <url-pattern>/AddNewHome</url-pattern>
+  </servlet-mapping>
+
+ 
+  <servlet>
+     <servlet-name>Price</servlet-name>
+     <servlet-class>Price</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>Price</servlet-name>
+     <url-pattern>/Price</url-pattern>
+  </servlet-mapping>
+
+ 
+
+  <servlet>
+     <servlet-name>DeleteHome</servlet-name>
+     <servlet-class>DeleteHome</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>DeleteHome</servlet-name>
+     <url-pattern>/DeleteHome</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+     <servlet-name>updateOwner</servlet-name>
+     <servlet-class>updateOwner</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>updateOwner</servlet-name>
+     <url-pattern>/updateOwner</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+     <servlet-name>Selecthome</servlet-name>
+     <servlet-class>Selecthome</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>Selecthome</servlet-name>
+     <url-pattern>/Selecthome</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+     <servlet-name>homesForSale</servlet-name>
+     <servlet-class>homesForSale</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>homesForSale</servlet-name>
+     <url-pattern>/homesForSale</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>AddPerson</servlet-name>
+     <servlet-class>AddPerson</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>AddPerson</servlet-name>
+     <url-pattern>/AddPerson</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+     <servlet-name>UpdateName</servlet-name>
+     <servlet-class>UpdateName</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>UpdateName</servlet-name>
+     <url-pattern>/UpdateName</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+     <servlet-name>index</servlet-name>
+     <servlet-class>index</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>index</servlet-name>
+     <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+
+</web-app>
